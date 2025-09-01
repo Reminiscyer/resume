@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Professional CV Download | ProfolioPro</title>
+    <meta name="description" content="Download professional resume in multiple formats - ATS-friendly, portfolio-enhanced, and plain-text versions available." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fprofoliopr2093back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border-light">
+        <div class="container-max">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-secondary">ProfolioPro</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_digital_craftsperson_portfolio.html" class="text-text-secondary hover:text-primary transition-micro">Home</a>
+                    <a href="about_professional_journey.html" class="text-text-secondary hover:text-primary transition-micro">About</a>
+                    <a href="portfolio_project_showcase_gallery.html" class="text-text-secondary hover:text-primary transition-micro">Portfolio</a>
+                    <a href="services_offerings_pricing.html" class="text-text-secondary hover:text-primary transition-micro">Services</a>
+                    <a href="contact_hire_me_hub.html" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                    <a href="resume_professional_cv_download.html" class="btn-secondary">Resume</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-4 border-t border-border-light">
+                    <a href="homepage_digital_craftsperson_portfolio.html" class="block text-text-secondary">Home</a>
+                    <a href="about_professional_journey.html" class="block text-text-secondary">About</a>
+                    <a href="portfolio_project_showcase_gallery.html" class="block text-text-secondary">Portfolio</a>
+                    <a href="services_offerings_pricing.html" class="block text-text-secondary">Services</a>
+                    <a href="contact_hire_me_hub.html" class="block text-text-secondary">Contact</a>
+                    <a href="resume_professional_cv_download.html" class="block text-primary font-medium">Resume</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-secondary mb-4">Professional Resume</h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Download my resume in multiple formats optimized for different use cases - from ATS-friendly versions to portfolio-enhanced presentations
+                </p>
+            </div>
+            
+            <!-- Download Options -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- Standard PDF -->
+                <div class="card p-6 text-center">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Standard PDF</h3>
+                    <p class="text-text-secondary mb-4">Clean, professional format perfect for job applications and HR systems</p>
+                    <button class="btn-primary w-full" onclick="downloadResume('standard')">Download PDF</button>
+                </div>
+                
+                <!-- Portfolio Enhanced -->
+                <div class="card p-6 text-center border-2 border-primary">
+                    <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Enhanced</h3>
+                    <p class="text-text-secondary mb-4">Visual resume with project images and design elements for client presentations</p>
+                    <button class="btn-primary w-full" onclick="downloadResume('portfolio')">Download PDF</button>
+                    <div class="text-xs text-primary mt-2 font-medium">RECOMMENDED</div>
+                </div>
+                
+                <!-- ATS Plain Text -->
+                <div class="card p-6 text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">ATS Optimized</h3>
+                    <p class="text-text-secondary mb-4">Plain-text format optimized for Applicant Tracking Systems</p>
+                    <button class="btn-secondary w-full" onclick="downloadResume('ats')">Download TXT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Resume Preview -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="max-w-4xl mx-auto">
+                <!-- Resume Header -->
+                <div class="card p-8 mb-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional headshot" class="w-24 h-24 rounded-lg object-cover" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="flex-1">
+                            <h2 class="text-3xl font-bold text-secondary mb-2">Alex Johnson</h2>
+                            <p class="text-xl text-primary mb-4">Full-Stack Developer & UI/UX Designer</p>
+                            <div class="grid md:grid-cols-2 gap-4 text-text-secondary">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                    alex.johnson@profoliopro.com
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                    +1 (555) 123-4567
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                    San Francisco, CA
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    linkedin.com/in/alexjohnson
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="card p-8 mb-8">
+                    <h3 class="text-2xl font-semibold text-secondary mb-4 flex items-center">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        Professional Summary
+                    </h3>
+                    <p class="text-text-secondary leading-relaxed">
+                        Innovative Full-Stack Developer and UI/UX Designer with 5+ years of experience creating scalable web applications and intuitive user experiences. Proven track record of improving site performance by 40%, leading cross-functional teams of 5+ developers, and delivering 15+ projects on time and under budget. Expertise in React, Node.js, Python, and modern design tools, with a passion for bridging technical excellence and creative vision.
+                    </p>
+                </div>
+
+                <!-- Core Competencies -->
+                <div class="card p-8 mb-8">
+                    <h3 class="text-2xl font-semibold text-secondary mb-6 flex items-center">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </div>
+                        Core Competencies
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-3">Frontend Development</h4>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                                    React.js & Vue.js
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                                    JavaScript/TypeScript
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                                    HTML5 & CSS3
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-2"></div>
+                                    Responsive Design
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-3">Backend Development</h4>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-accent rounded-full mr-2"></div>
+                                    Node.js & Express
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-accent rounded-full mr-2"></div>
+                                    Python & Django
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-accent rounded-full mr-2"></div>
+                                    MongoDB & PostgreSQL
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-accent rounded-full mr-2"></div>
+                                    RESTful APIs
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-3">Design & Tools</h4>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                                    Figma & Adobe Creative Suite
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                                    UI/UX Design
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                                    Git & GitHub
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                                    Docker & AWS
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="card p-8 mb-8">
+                    <h3 class="text-2xl font-semibold text-secondary mb-6 flex items-center">
+                        <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 6h-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2zM8 4h8v2H8V4zm11 16H5V8h2v1a1 1 0 002 0V8h6v1a1 1 0 002 0V8h2v12z"/>
+                            </svg>
+                        </div>
+                        Work Experience
+                    </h3>
+                    <div class="space-y-8">
+                        <!-- Job 1 -->
+                        <div class="border-l-4 border-primary pl-6">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                <h4 class="text-xl font-semibold text-secondary">Senior Full-Stack Developer</h4>
+                                <span class="text-text-secondary font-medium">2022 - Present</span>
+                            </div>
+                            <p class="text-primary font-medium mb-3">TechStart Inc. | San Francisco, CA</p>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Improved site performance by 40% through code optimization and modern build processes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Led cross-functional team of 5 developers in agile development environment</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Delivered 15+ projects on time and under budget, maintaining 98% client satisfaction</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Architected scalable React applications serving 100K+ monthly active users</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Job 2 -->
+                        <div class="border-l-4 border-accent pl-6">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                <h4 class="text-xl font-semibold text-secondary">Full-Stack Developer</h4>
+                                <span class="text-text-secondary font-medium">2020 - 2022</span>
+                            </div>
+                            <p class="text-accent font-medium mb-3">DataFlow Solutions | Remote</p>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-accent rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Reduced dashboard load time by 60% through performance optimization techniques</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-accent rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Developed real-time analytics dashboard using Vue.js and Python backend</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-accent rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Implemented automated testing suite, reducing bugs by 35%</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Job 3 -->
+                        <div class="border-l-4 border-warning pl-6">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                                <h4 class="text-xl font-semibold text-secondary">Frontend Developer & Designer</h4>
+                                <span class="text-text-secondary font-medium">2019 - 2020</span>
+                            </div>
+                            <p class="text-warning font-medium mb-3">Creative Digital Agency | San Francisco, CA</p>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Designed and developed responsive websites for 20+ clients across various industries</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Increased client conversion rates by 25% through UX/UI improvements</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                                    <span>Collaborated with design team to create cohesive brand experiences</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications -->
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <!-- Education -->
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-semibold text-secondary mb-6 flex items-center">
+                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L21 9l-9-6zM18.82 9L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                </svg>
+                            </div>
+                            Education
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold text-secondary">Bachelor of Science in Computer Science</h4>
+                                <p class="text-primary font-medium">University of California, Berkeley</p>
+                                <p class="text-text-secondary">2015 - 2019 | GPA: 3.8/4.0</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Certificate in UX/UI Design</h4>
+                                <p class="text-primary font-medium">Stanford Continuing Studies</p>
+                                <p class="text-text-secondary">2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certifications -->
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-semibold text-secondary mb-6 flex items-center">
+                            <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            Certifications
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                <div>
+                                    <span class="font-medium">AWS Certified Developer</span>
+                                    <p class="text-text-secondary text-sm">Amazon Web Services (2023)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                <div>
+                                    <span class="font-medium">Google Analytics Certified</span>
+                                    <p class="text-text-secondary text-sm">Google (2023)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                <div>
+                                    <span class="font-medium">Adobe Certified Expert</span>
+                                    <p class="text-text-secondary text-sm">Adobe Creative Suite (2022)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                <div>
+                                    <span class="font-medium">Scrum Master Certified</span>
+                                    <p class="text-text-secondary text-sm">Scrum Alliance (2021)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notable Projects -->
+                <div class="card p-8 mb-8">
+                    <h3 class="text-2xl font-semibold text-secondary mb-6 flex items-center">
+                        <div class="w-8 h-8 bg-warning rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        Notable Projects
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Project 1 -->
+                        <div class="border border-border-light rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-secondary mb-2">E-commerce Platform Redesign</h4>
+                            <p class="text-text-secondary mb-3">Complete overhaul of online store with modern React frontend and Node.js backend</p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">React</span>
+                                <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">Node.js</span>
+                                <span class="px-2 py-1 bg-primary-50 text-primary text-xs rounded">MongoDB</span>
+                            </div>
+                            <p class="text-sm text-success font-medium">Result: 40% increase in conversion rate</p>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="border border-border-light rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-secondary mb-2">Real-time Analytics Dashboard</h4>
+                            <p class="text-text-secondary mb-3">Interactive data visualization platform with live updates and custom reporting</p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">Vue.js</span>
+                                <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">Python</span>
+                                <span class="px-2 py-1 bg-accent-50 text-accent text-xs rounded">PostgreSQL</span>
+                            </div>
+                            <p class="text-sm text-success font-medium">Result: 60% faster load times</p>
+                        </div>
+                        
+                        <!-- Project 3 -->
+                        <div class="border border-border-light rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-secondary mb-2">Mobile Fitness App</h4>
+                            <p class="text-text-secondary mb-3">Cross-platform mobile application with workout tracking and social features</p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 bg-warning-50 text-warning text-xs rounded">React Native</span>
+                                <span class="px-2 py-1 bg-warning-50 text-warning text-xs rounded">Firebase</span>
+                                <span class="px-2 py-1 bg-warning-50 text-warning text-xs rounded">Figma</span>
+                            </div>
+                            <p class="text-sm text-success font-medium">Result: 4.8★ App Store rating</p>
+                        </div>
+                        
+                        <!-- Project 4 -->
+                        <div class="border border-border-light rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-secondary mb-2">Corporate Website Redesign</h4>
+                            <p class="text-text-secondary mb-3">Modern, responsive website with CMS integration and SEO optimization</p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded">WordPress</span>
+                                <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded">PHP</span>
+                                <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded">MySQL</span>
+                            </div>
+                            <p class="text-sm text-success font-medium">Result: 150% increase in organic traffic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Links -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-secondary mb-6 flex items-center">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                            </svg>
+                        </div>
+                        Professional Links
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <a href="javascript:void(0)" class="flex items-center p-4 border border-border-light rounded-lg hover:border-primary transition-colors">
+                            <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold">LinkedIn</div>
+                                <div class="text-text-secondary text-sm">Professional Network</div>
+                            </div>
+                        </a>
+                        
+                        <a href="javascript:void(0)" class="flex items-center p-4 border border-border-light rounded-lg hover:border-primary transition-colors">
+                            <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold">GitHub</div>
+                                <div class="text-text-secondary text-sm">Code Repository</div>
+                            </div>
+                        </a>
+                        
+                        <a href="javascript:void(0)" class="flex items-center p-4 border border-border-light rounded-lg hover:border-primary transition-colors">
+                            <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.94 14.036c-.233.624-.43 1.2-.606 1.783.96-.697 2.101-1.139 3.418-1.304 2.513-.314 4.746-1.973 5.876-4.058l-1.456-1.455c-.706 1.263-2.188 2.144-3.805 2.144-1.618 0-3.099-.881-3.805-2.144L5.107 10.45c1.13 2.085 3.363 3.744 5.876 4.058 1.317.165 2.458.607 3.418 1.304-.176-.583-.373-1.159-.606-1.783C12.098 16.708 9.222 16.708 6.94 14.036z"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold">Dribbble</div>
+                                <div class="text-text-secondary text-sm">Design Portfolio</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Resources -->
+    <section class="section-padding bg-surface">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">Additional Resources</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Explore more materials and connect with me across different platforms
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <!-- Cover Letter -->
+                <div class="card p-6 text-center">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Cover Letter Template</h3>
+                    <p class="text-text-secondary text-sm mb-4">Customizable cover letter for job applications</p>
+                    <button class="btn-secondary text-sm w-full" onclick="downloadResource('cover-letter')">Download</button>
+                </div>
+                
+                <!-- Portfolio Samples -->
+                <div class="card p-6 text-center">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Portfolio Samples</h3>
+                    <p class="text-text-secondary text-sm mb-4">High-resolution project screenshots and mockups</p>
+                    <button class="btn-secondary text-sm w-full" onclick="downloadResource('portfolio-samples')">Download</button>
+                </div>
+                
+                <!-- References -->
+                <div class="card p-6 text-center">
+                    <div class="w-12 h-12 bg-warning rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">References</h3>
+                    <p class="text-text-secondary text-sm mb-4">Professional references available upon request</p>
+                    <button class="btn-secondary text-sm w-full" onclick="requestReferences()">Request</button>
+                </div>
+                
+                <!-- Salary Guide -->
+                <div class="card p-6 text-center">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Salary Expectations</h3>
+                    <p class="text-text-secondary text-sm mb-4">Market rate information and salary expectations</p>
+                    <a href="contact_hire_me_hub.html" class="btn-secondary text-sm w-full inline-block">Discuss</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">ProfolioPro</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Full-stack solutions with design sensibility. Bridging the gap between technical expertise and creative vision.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about_professional_journey.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="portfolio_project_showcase_gallery.html" class="text-gray-300 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="services_offerings_pricing.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="contact_hire_me_hub.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Get In Touch</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            hello@profoliopro.com
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            San Francisco, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 ProfolioPro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Download resume functions
+        function downloadResume(type) {
+            // Simulate download functionality
+            const downloadMessages = {
+                'standard': 'Downloading Standard PDF Resume...',
+                'portfolio': 'Downloading Portfolio-Enhanced PDF Resume...',
+                'ats': 'Downloading ATS-Optimized Text Resume...'
+            };
+            
+            alert(downloadMessages[type]);
+            
+            // In a real application, this would trigger an actual file download
+            // For demo purposes, we'll just show a message
+            setTimeout(() => {
+                alert('Download completed! Check your downloads folder.');
+            }, 1500);
+        }
+
+        // Download additional resources
+        function downloadResource(type) {
+            const resourceMessages = {
+                'cover-letter': 'Downloading Cover Letter Template...',
+                'portfolio-samples': 'Downloading Portfolio Samples...'
+            };
+            
+            alert(resourceMessages[type]);
+            
+            setTimeout(() => {
+                alert('Download completed! Check your downloads folder.');
+            }, 1500);
+        }
+
+        // Request references
+        function requestReferences() {
+            alert('References request sent! You will receive an email with reference contacts within 24 hours.');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Print functionality
+        function printResume() {
+            window.print();
+        }
+
+        // Add print button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add print styles
+            const printStyles = `
+                @media print {
+                    nav, footer, .download-section { display: none !important; }
+                    .card { box-shadow: none !important; border: 1px solid #e5e7eb !important; }
+                    body { font-size: 12px !important; }
+                    .section-padding { padding: 1rem !important; }
+                }
+            `;
+            
+            const styleSheet = document.createElement('style');
+            styleSheet.textContent = printStyles;
+            document.head.appendChild(styleSheet);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
